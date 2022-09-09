@@ -3,14 +3,12 @@
 /**
 * main - print the string in the put function
 *
-* Desciption: using the main function
-* this prorgram prints "Programming is like building a multilingual puzzle
+* Description using the main function 
+* this program prints "Programming is like building a multilingual puzzle\n");
 * Return: 0
 */
-int main(void)
-        puts("\"Programming is like building a multilingual puzzle");
+int main(void) 
+{
+        puts("\"Programming is like building a multilingual puzzle\n");
         return (0);
-
-
-
-
+}
