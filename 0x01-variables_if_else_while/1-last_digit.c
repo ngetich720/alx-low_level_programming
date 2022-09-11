@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - prints random number to variable
+* main - Prints random number to variable
 *
 * Return: Always (Successful)
 */
@@ -27,4 +27,5 @@ else
 printf("less than 6 and not 0\n");
 }
 return (0);
+}
 
