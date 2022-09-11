@@ -1,34 +1,90 @@
 #include <stdio.h>
-/**
-* mai - print possible combination of two 2-digit
-* numbers
-*
-* Return: returns zero at the end
-*/
-int mai (void)
-{
-	int i, p;
 
-	for (i = 0; i < 100; i++)
-	{
-		for (p = 0; p < 100; j++)
-		{
-			if (p > i)
-			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
-				putchar(' ');
-				putchar((p / 10) + '0');
-				putchar((p % 10) + '0');
-				if (i != 98)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+/**
+ *
+ *  * main - prints numbers between 012 to 789.
+ *
+ *   *
+ *
+ *    * Return: Always 0 (success)
+ *
+ *     */
+
+int main(void)
+
+{
+
+		int i, e, g;
+
+
+
+			i = 48;
+
+				e = 48;
+
+					g = 48;
+
+
+
+						while (e < 58)
+
+								{
+
+											i = 48;
+
+													while (i < 58)
+
+																{
+
+																				g = 48;
+
+																							while (g < 58)
+
+																											{
+
+																																if (e != i && e != g && i != g && e  < i && i < g)
+
+																																					{
+
+																																											putchar(e);
+
+																																																putchar(i);
+
+																																																					putchar(g);
+
+																																																										if (i == 56 && e == 55 && g  == 57)
+
+																																																																{
+
+																																																																							break;
+
+																																																																												}
+
+																																																															putchar(',');
+
+																																																																				putchar(' ');
+
+
+
+																																																																								}
+
+																																				g++;
+
+																																							}
+
+																										i++;
+
+																												}
+
+															e++;
+
+																}
+
+							putchar('\n');
+
+								return (0);
+
 }
+
+
 
