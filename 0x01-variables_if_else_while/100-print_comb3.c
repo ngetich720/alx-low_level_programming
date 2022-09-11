@@ -29,7 +29,7 @@ if (i != 8)
 
 {
 
-putchar(' , ');
+putchar(',');
 
 putchar(' ');
 
