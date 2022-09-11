@@ -1,31 +1,44 @@
 #include <stdio.h>
 /**
-* main - print possible combo of 3
+* main - prints numbers between 012 to 789
 *
-* Return: returns zero at the end
+* Return: Always 0 (success)
 */
 int main(void)
 {
-	int i, p, m;
+	int i, e, g;
 
-	for (i = 0; i <= 9; i++)
+	i = 48;
+	e = 48;
+	g = 48;
+
+	while (e < 58)
 	{
-		for (p = 1; p <= 9; p++)
+		i = 48;
+		while (i < 58)
 		{
-			for (m = 2; m <= 9; m++)
+			g = 48;
+			while (g < 58)
 			{
-			if (m > p && p > i)
-			{
-				putchar(i + '0');
-				putchar(p + '0');
-				putchar(m + '0');
+				if (e != i && e != g && i != g && e  < i && i < g)
+				{
+					putchar(e);
+					putchar(i);
+					putchar(g);
+					if (i == 56 && e == 55 && g  == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
+				}
+				g++;
 			}
+			i++;
 		}
-		}
+		e++;
 	}
-}
-
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
 
