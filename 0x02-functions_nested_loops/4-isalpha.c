@@ -1,16 +1,22 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * _isalpha - function to check if c is a letter, lowercase or uppercase
- * @c: is the int that will use for the argument of the function
- * Return: 0
+ * _isalpha - shows 1 if the ouput is c.
+ *
+ * @c: the character in ASCII code.
+ *
+ * Return: 1 if c is a letter, lowercase or uppercase. returns 0 otherwise
  */
+
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'z'))
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
-	return (1);
+		return (1);
 	}
 	else
-	return (0);
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
 
