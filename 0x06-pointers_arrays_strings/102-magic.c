@@ -12,7 +12,7 @@ int main(void)
 	a[2] = 98;
 	p = &n;
 	/*
-	 * main - alx- write your line of code here...
+	 * write your line of code here...
 	 * Remember:
 	 * -you are not allowed to use a
 	 * -you are not allowed to modify p
