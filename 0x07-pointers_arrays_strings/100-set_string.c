@@ -1,18 +1,30 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - check the code
+ * print_diagsums - prints the sum of the two diagonals of a square
+ * matrix of integers
  *
- * Return: Always 0.
+ * @a: the name of the array
+ * @size: the size of the array
+ *
+ * Return: nothing
  */
-int main(void)
+void print_diagsums(int *a, int size)
 {
-	char *s0 = "Bob Dylan";
-	char *s1 = "Robert Allen";
+	int i = 0;
+	int j = size - 1;
+	int sum1 = 0;
+	int sum2 = 0;
 
-	printf("%s, %s\n", s0, s1);
-	set_string(&s1, s0);
-	printf("%s, %s\n", s0, s1);
-	return (0);
+	while (i <= (size * size))
+	{
+		sum1 = sum1 + a[i];
+		i = i + size + 1;
+	}
+	while (j < (size * size - 1))
+	{
+		sum2 += a[j];
+		j = j + size - 1;
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
