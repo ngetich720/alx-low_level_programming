@@ -1,30 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_diagsums - prints the sum of the two diagonals of a square
- * matrix of integers
- *
- * @a: the name of the array
- * @size: the size of the array
- *
- * Return: nothing
+ * set_string - sets the value of a pointer to a char
+ * @s:source adress.
+ * @to: target adress
+ * Return: no return.
  */
-void print_diagsums(int *a, int size)
+void set_string(char **s, char *to)
 {
-	int i = 0;
-	int j = size - 1;
-	int sum1 = 0;
-	int sum2 = 0;
-
-	while (i <= (size * size))
-	{
-		sum1 = sum1 + a[i];
-		i = i + size + 1;
-	}
-	while (j < (size * size - 1))
-	{
-		sum2 += a[j];
-		j = j + size - 1;
-	}
-	printf("%d, %d\n", sum1, sum2);
+	*s = to;
 }
