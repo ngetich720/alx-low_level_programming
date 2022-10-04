@@ -5,7 +5,7 @@
  * alloc_grid - 2 dimensional array of integers
  * @width: width of array
  * @height: height of array
-*
+ *
  * Return: 0 if width or height is 0 or negative
  */
 
